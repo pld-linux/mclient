@@ -2,7 +2,7 @@ Summary:	MasqDialer console client
 Summary(pl):	Konsolowy klient MasqDialera
 Name:		mclient
 Version:	2.8
-Release:	3
+Release:	4
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://cpwright.villagenet.com/cli-mclient/cli-%{name}-%{version}.tar.gz
