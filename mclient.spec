@@ -31,12 +31,10 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install mclient $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf CHANGES README.mclientrc
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/mclient
-%doc *.gz
+%doc CHANGES README.mclientrc
