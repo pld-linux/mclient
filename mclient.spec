@@ -5,6 +5,7 @@ Version:	2.8
 Release:	2
 License:	GPL
 Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 Source0:	http://cpwright.villagenet.com/cli-mclient/cli-%{name}-%{version}.tar.gz
 Patch0:		%{name}-rcfile.patch
@@ -24,7 +25,7 @@ MasqDialera autorstwa Charlesa P. Wrighta (mserverem).
 %patch0 -p1
 
 %build
-%{__make} LIBS="-s" CFLAGS="$RPM_OPT_FLAGS"
+%{__make} LIBS="%{rpmldflags}" CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
