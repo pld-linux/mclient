@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://cpwright.villagenet.com/cli-mclient/cli-%{name}-%{version}.tar.gz
+# Source0-md5:	95dbde2b75db245b65b34ec33de695e9
 Patch0:		%{name}-rcfile.patch
 URL:		http://cpwright.villagenet.com/cli-mclient
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
