@@ -24,7 +24,7 @@ MasqDialera autorstwa Charlesa P. Wrighta (mserverem).
 %patch0 -p1
 
 %build
-make LIBS="-s" CFLAGS="$RPM_OPT_FLAGS"
+%{__make} LIBS="-s" CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
