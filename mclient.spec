@@ -5,10 +5,6 @@ Version:	2.8
 Release:	3
 License:	GPL
 Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
 Source0:	http://cpwright.villagenet.com/cli-mclient/cli-%{name}-%{version}.tar.gz
 Patch0:		%{name}-rcfile.patch
 URL:		http://cpwright.villagenet.com/cli-mclient
