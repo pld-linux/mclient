@@ -3,21 +3,21 @@ Summary(pl):	Konsolowy klient MasqDialera
 Name:		mclient
 Version:	2.8
 Release:	2
+License:	GPL
 Group:		Networking/Utilities
 Group(pl):	Sieciowe/Narzêdzia
-License:	GPL
-Source0:	http://cpwright.villagenet.com/cli-mclient/cli-mclient-%{version}.tar.gz
+Source0:	http://cpwright.villagenet.com/cli-mclient/cli-%{name}-%{version}.tar.gz
 Patch0:		%{name}-rcfile.patch
 URL:		http://cpwright.villagenet.com/cli-mclient
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Console MasqDialer client for use with Charles P. Wright MasqDialer server
-(mserver)
+Console MasqDialer client for use with Charles P. Wright MasqDialer
+server (mserver).
 
 %description -l pl
 Konsolowy klient MasqDialera, przeznaczony do u¿ycia razem z serwerem
-MasqDialera autorstwa Charlesa P. Wrighta (mserverem)
+MasqDialera autorstwa Charlesa P. Wrighta (mserverem).
 
 %prep
 %setup  -q
@@ -29,7 +29,9 @@ make LIBS="-s" CFLAGS="$RPM_OPT_FLAGS"
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install mclient $RPM_BUILD_ROOT%{_bindir}
+
 gzip -9nf CHANGES README.mclientrc
 
 %clean
