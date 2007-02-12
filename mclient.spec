@@ -1,5 +1,5 @@
 Summary:	MasqDialer console client
-Summary(pl):	Konsolowy klient MasqDialera
+Summary(pl.UTF-8):   Konsolowy klient MasqDialera
 Name:		mclient
 Version:	2.8
 Release:	4
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Console MasqDialer client for use with Charles P. Wright MasqDialer
 server (mserver).
 
-%description -l pl
-Konsolowy klient MasqDialera, przeznaczony do uøycia razem z serwerem
+%description -l pl.UTF-8
+Konsolowy klient MasqDialera, przeznaczony do u≈ºycia razem z serwerem
 MasqDialera autorstwa Charlesa P. Wrighta (mserverem).
 
 %prep
