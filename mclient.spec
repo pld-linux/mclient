@@ -1,5 +1,5 @@
 Summary:	MasqDialer console client
-Summary(pl.UTF-8):   Konsolowy klient MasqDialera
+Summary(pl.UTF-8):	Konsolowy klient MasqDialera
 Name:		mclient
 Version:	2.8
 Release:	4
