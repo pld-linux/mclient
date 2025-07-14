@@ -21,7 +21,7 @@ MasqDialera autorstwa Charlesa P. Wrighta (mserverem).
 
 %prep
 %setup  -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} LIBS="%{rpmldflags}" CFLAGS="%{rpmcflags}"
